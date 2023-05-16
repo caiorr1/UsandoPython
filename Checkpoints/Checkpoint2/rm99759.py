@@ -61,4 +61,4 @@ while number_loop == 1:
         file_site.write(str(file_html))
     print("Dados salvos!\n")
     number_loop = int(input("Digite 1 para salvar outra HTML\nDigite 2 para sair do programa: "))
-    break
+    
