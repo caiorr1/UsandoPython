@@ -4,9 +4,21 @@ print('*********************************')
 print('Bem vindo ao Jogo de Adivinhação!')
 print('*********************************')
 
-tentativas = 3
+tentativas = 0
 num_secreto = random.randrange(1,101) 
 
+print('Qual o nível de dificuldade?')
+print('(1) Fácil (2) Médio (3) Difícil')
+
+nivel = int(input('Defina o nível: '))
+
+if nivel == 1:
+    tentativas = 15
+elif nivel == 2:
+    tentativas = 10
+else:
+    tentativas = 5
+    
 
 for rodada in range (1, tentativas + 1):  
     print(f'Tentativa {rodada} de {tentativas}')
